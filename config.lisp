@@ -1,6 +1,6 @@
 (in-package :cl-user)
 
-(defvar *local-packages* nil
+(defvar *local-packages*
   ;; Use lowercase strings in the packages here! For example:
   '("utils")
   "Load into the core from local ASDF directories.")
