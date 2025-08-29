@@ -3,6 +3,9 @@
 SBCL
 QUICKLISP
 
+# TODO:
+- Manage .sbclrc according to user input. Currently I just unsymlink it
+for the update and resymlink it after.
 # INSTALLATION
 
 1) Add local packages to ASDF if needed in the `~/.sbclrc`.
@@ -34,5 +37,5 @@ sbcl --core "$HOME/.sbcl-core/libs"
 # AFTER UPDATING SBCL
 Just regenerate the core.
 ```sh
-sbcl --load core-generation.lisp
+sbcl --load make.lisp
 ```

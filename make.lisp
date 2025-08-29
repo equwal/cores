@@ -11,5 +11,4 @@
 (fmakunbound '*quicklisp-packages*)
 
 (save-lisp-and-die (merge-pathnames #p".sbcl-core-libs" (user-homedir-pathname)))
-
-
+(load "post-config.lisp")
